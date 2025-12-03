@@ -1,0 +1,40 @@
+/* Сброс стандартных отступов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Стили для всего приложения */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Убедимся что карта отображается правильно */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Улучшаем отображение всплывающих окон */
+.leaflet-popup-content {
+  margin: 0 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px !important;
+  padding: 0 !important;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .ant-layout-header {
+    padding: 0 10px !important;
+  }
+  
+  h2.ant-typography {
+    font-size: 18px !important;
+  }
+}
